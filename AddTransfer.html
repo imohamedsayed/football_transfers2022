@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Include Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!--include font awesome-->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--Include custom style-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="shortcut icon" href="images/icons/trolley.png" /> -->
+    <title>2022 Mercato</title>
+  </head>
+  <body>
+    <div class="home-view">
+      <aside class="expanded">
+        <div class="logo"></div>
+        <div class="menu-toggler-wrap">
+          <button class="menu-toggler">
+            <i class="fa-solid fa-angles-right"></i>
+          </button>
+        </div>
+        <div class="menu mt-3">
+          <a class="button" href="./index.html">
+            <div class="text-center">
+              <i class="fa-solid fa-home back"></i>
+            </div>
+            <span class="text">Home</span>
+          </a>
+          <a class="button active" href="./transfers.html">
+            <div class="text-center">
+              <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </div>
+            <span class="text">Transfers</span>
+          </a>
+          <a class="button" href="./Clubs.html">
+            <div class="text-center">
+              <i class="fa-solid fa-shield"></i>
+            </div>
+            <span class="text">Clubs</span>
+          </a>
+          <a class="button" href="./Players.html">
+            <div class="text-center">
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <span class="text">Players</span>
+          </a>
+        </div>
+      </aside>
+      <div class="main">
+        <div class="container mt-5">
+          <div class="transfers-panel">
+            <form>
+              <h2>Add New Transfer</h2>
+              <div class="row inputs">
+                <div class="col-12 col-md-6 mb-4">
+                  <div class="input-field">
+                    <label>Product Name</label>
+                    <input
+                      type="text"
+                      placeholder="Player's Name"
+                      name="name"
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                  <div class="input-field">
+                    <label>Position</label>
+                    <select name="position">
+                      <option value="">center-forward</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                  <div class="input-field">
+                    <label>Age</label>
+                    <input
+                      type="number"
+                      placeholder="Player's Age"
+                      name="age"
+                      min="15"
+                      max="40"
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                  <div class="input-field">
+                    <label>Origin Club</label>
+                    <select name="origin_club">
+                      <option value="">Ahly</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                  <div class="input-field">
+                    <label>League Origin Club</label>
+                    <select name="league_origin_club">
+                      <option value="">LaLiga</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                  <div class="input-field">
+                    <label> Origin Country</label>
+                    <select name="country_origin_club">
+                      <option value="">Spain</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                  <div class="input-field">
+                    <label>New Club</label>
+                    <select name="new_club">
+                      <option value="">Barcelona</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                  <div class="input-field">
+                    <label>New League</label>
+                    <select name="league_new_club">
+                      <option value="">LaLiga</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                  <div class="input-field">
+                    <label>New Country</label>
+                    <select name="league_new_club">
+                      <option value="">Spain</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                  <div class="input-field">
+                    <label>Player Value</label>
+
+                    <input
+                      type="number"
+                      name="player_value"
+                      placeholder="type player value"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">
+                  Add Transfer
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

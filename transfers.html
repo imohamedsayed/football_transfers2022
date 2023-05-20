@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Include Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!--include font awesome-->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--Include custom style-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="shortcut icon" href="images/icons/trolley.png" /> -->
+    <title>2022 Mercato</title>
+  </head>
+  <body>
+    <div class="home-view">
+      <aside class="expanded">
+        <div class="logo"></div>
+        <div class="menu-toggler-wrap">
+          <button class="menu-toggler">
+            <i class="fa-solid fa-angles-right"></i>
+          </button>
+        </div>
+        <div class="menu mt-3">
+          <a class="button" href="./index.html">
+            <div class="text-center">
+              <i class="fa-solid fa-home back"></i>
+            </div>
+            <span class="text">Home</span>
+          </a>
+          <a class="button active" href="./transfers.html">
+            <div class="text-center">
+              <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </div>
+            <span class="text">Transfers</span>
+          </a>
+          <a class="button" href="./Clubs.html">
+            <div class="text-center">
+              <i class="fa-solid fa-shield"></i>
+            </div>
+            <span class="text">Clubs</span>
+          </a>
+          <a class="button" href="./Players.html">
+            <div class="text-center">
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <span class="text">Players</span>
+          </a>
+        </div>
+      </aside>
+      <div class="main transfers">
+        <div class="overlay"></div>
+        <div class="container mt-5">
+          <div class="transfers-panel">
+            <h2 class="text-center text-muted mb-5">Transfers</h2>
+            <form class="mb-5">
+              <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                  <input type="text" placeholder="search by player's name" />
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <input type="text" placeholder="search by new club" />
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <input type="text" placeholder="search by old club" />
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <input type="text" placeholder="search by old league" />
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <input type="text" placeholder="search by new league" />
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <input type="text" placeholder="search by Position" />
+                </div>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">
+                  Display Result
+                </button>
+              </div>
+            </form>
+            <div class="text-end my-3">
+              <a href="./AddTransfer.html" class="btn btn-outline-info mx-2"
+                >Add a new transfer</a
+              >
+              <button
+                class="btn btn-outline-danger"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+              >
+                Delete All Transfers
+              </button>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <td>Name</td>
+                  <td class="d-lg-table-cell d-none">Position</td>
+                  <td class="d-lg-table-cell d-none">age</td>
+                  <td>origin_club</td>
+                  <td class="d-lg-table-cell d-none">origin_league</td>
+                  <td class="d-lg-table-cell d-none">origin_country</td>
+                  <td>new_club</td>
+                  <td class="d-lg-table-cell d-none">new_league</td>
+                  <td class="d-lg-table-cell d-none">new_country</td>
+                  <td>player_value</td>
+                  <td>Update</td>
+                  <td>Delete</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Leander Dendoncker</td>
+                  <td class="d-lg-table-cell d-none">Defensive Midfield</td>
+                  <td class="d-lg-table-cell d-none">27</td>
+                  <td>Wolverhampton Wanderers</td>
+                  <td class="d-lg-table-cell d-none">Premier League</td>
+                  <td class="d-lg-table-cell d-none">England</td>
+                  <td>Aston Villa</td>
+                  <td class="d-lg-table-cell d-none">Premier League</td>
+                  <td class="d-lg-table-cell d-none">England</td>
+                  <td>€28.00m</td>
+                  <td>
+                    <a href="" class="btn btn-info">Update</a>
+                  </td>
+                  <td>
+                    <a href="" class="btn btn-danger">Delete</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Pierre-Emerick Aubameyang</td>
+                  <td class="d-lg-table-cell d-none">Centre-Forward</td>
+                  <td class="d-lg-table-cell d-none">33</td>
+                  <td>FC Barcelona</td>
+                  <td class="d-lg-table-cell d-none">LaLiga</td>
+                  <td class="d-lg-table-cell d-none">Spain</td>
+                  <td>Chelsea</td>
+                  <td class="d-lg-table-cell d-none">Premier League</td>
+                  <td class="d-lg-table-cell d-none">England</td>
+                  <td>€10.00m</td>
+                  <td>
+                    <a href="" class="btn btn-info">Update</a>
+                  </td>
+                  <td>
+                    <a href="" class="btn btn-danger">Delete</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 text-dark" id="staticBackdropLabel">
+              Delete All Transfers
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-dark">
+            Are you sure you want to delete all the transfers ?
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              No
+            </button>
+            <a href="" type="button" class="btn btn-danger">Yes, Delete</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Include Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!--include font awesome-->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--Include custom style-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="shortcut icon" href="images/icons/trolley.png" /> -->
+    <title>2022 Mercato | Clubs</title>
+  </head>
+  <body>
+    <div class="home-view">
+      <aside class="expanded">
+        <div class="logo"></div>
+        <div class="menu-toggler-wrap">
+          <button class="menu-toggler">
+            <i class="fa-solid fa-angles-right"></i>
+          </button>
+        </div>
+        <div class="menu mt-3">
+          <a class="button" href="./index.html">
+            <div class="text-center">
+              <i class="fa-solid fa-home back"></i>
+            </div>
+            <span class="text">Home</span>
+          </a>
+          <a class="button" href="./transfers.html">
+            <div class="text-center">
+              <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </div>
+            <span class="text">Transfers</span>
+          </a>
+          <a class="button active" href="./Clubs.html">
+            <div class="text-center">
+              <i class="fa-solid fa-shield"></i>
+            </div>
+            <span class="text">Clubs</span>
+          </a>
+          <a class="button" href="./Players.html">
+            <div class="text-center">
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <span class="text">Players</span>
+          </a>
+        </div>
+      </aside>
+      <div class="main">
+        <div class="w-100 search-bar">
+          <div>
+            <input type="text" placeholder="search for a club" />
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+        </div>
+        <div class="container mt-5">
+          <div class="sort mb-5 d-flex align-items-center gap-2">
+            <span>Sort By : </span>
+            <select name="s_trr">
+              <option value="">Club Name</option>
+              <option value="">League</option>
+              <option value="">Country</option>
+            </select>
+            <select name="s_beh">
+              <option selected>Asc</option>
+              <option>Desc</option>
+            </select>
+            <button class="btn"><i class="fa-solid fa-filter"></i></button>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-4 col-lg-3 mb-4">
+              <div class="card team-card">
+                <img src="./images/team.jpeg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">F.C Barcelona</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">League : LaLiga</li>
+                  <li class="list-group-item">Country : Spain</li>
+                </ul>
+                <div class="card-body">
+                  <a href="./ClubDetails.html" class="btn btn-dark"
+                    >View Transfer Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 mb-4">
+              <div class="card team-card">
+                <img src="./images/team.jpeg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">F.C Real Madrid</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">League : LaLiga</li>
+                  <li class="list-group-item">Country : Spain</li>
+                </ul>
+                <div class="card-body">
+                  <a href="./ClubDetails.html" class="btn btn-dark"
+                    >View Transfer Details</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 mb-4">
+              <div class="card team-card">
+                <img src="./images/team.jpeg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Ahly</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    League : Egyptian Premier League
+                  </li>
+                  <li class="list-group-item">Country : Egypt</li>
+                </ul>
+                <div class="card-body">
+                  <a href="./ClubDetails.html" class="btn btn-dark"
+                    >View Transfer Details</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
